@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  this is the create page
+{% endblock %}
+
+{% block body %}
+
+{{ candidate .<related_name>.all.count }}
+
+
+<a href = "{% url 'vote:canupdate' vote.id %}"> Update </a>  <br/>
+<a href = "{% url 'vote:poscreate' vote.id %}"> Position </a>  <br/>
+<a href = "{% url 'vote:index' %}"> Back </a>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  this is the index page
+{% endblock %}
+
+
+{% block body %}
+<a href = "{% url 'vote:canupdate' vote.id %}"> Update </a>  <br/>
+<a href = "{% url 'vote:poscreate' vote.id %}"> Position </a>  <br/>
+
+{% endblock %}
